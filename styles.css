@@ -1,0 +1,180 @@
+/* Type Selector */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  gap: 100px;
+  font-family: "Courier New", serif;
+  background-image: url(./Images/white-waves.png);
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  padding: 30px;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Combination Selector */
+
+.left-header span {
+  font-weight: normal;
+  font-size: 12pt;
+  margin-left: -10px;
+}
+
+.right-header ul {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.right-header ul li {
+  display: inline;
+  list-style: none;
+}
+
+.right-header ul li a::after {
+  content: " |";
+}
+
+.right-header ul li:last-child a::after {
+  content: none;
+}
+
+.left-main-section img {
+  margin-bottom: 20px;
+}
+
+.left-main-section h1,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.left-main-section ul {
+  font-size: larger;
+  list-style: none;
+  padding: 0;
+}
+
+.left-main-section li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.left-main-section h2 {
+  border-bottom-color: lightgray;
+  border-bottom-style: dashed;
+  border-bottom-width: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.left-main-section li a {
+  color: black;
+}
+
+.left-main-section p a {
+  color: blue;
+}
+
+.left-main-section li:hover {
+  background-color: green;
+}
+
+.right-main-section h2 {
+  border-bottom-color: lightgray;
+  border-bottom-style: dashed;
+  border-bottom-width: 3px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.right-main-section div p {
+  padding-left: 10px;
+}
+
+.right-main-section ul {
+  list-style: disc;
+}
+
+/* Class Selector */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+  margin: 30px auto 0px;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  border-radius: 100px;
+  width: 70%;
+}
+
+.left-header {
+  float: left;
+}
+
+.right-header {
+  background-color: rgb(100, 100, 100);
+  border-radius: 50px;
+  float: right;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
+
+.left-main-section {
+  margin-left: 35%;
+  text-align: center;
+}
+
+.personal-image {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.right-main-section {
+  margin-right: 18%;
+}
