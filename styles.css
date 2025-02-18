@@ -44,12 +44,34 @@ a {
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+tr {
+  background: #f2f2f2;
+}
+
+th {
+  background: #333;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
 /* Combination Selector */
 
 .left-header span {
   font-weight: normal;
   font-size: 12pt;
-  margin-left: -10px;
+  margin-left: 0;
 }
 
 .right-header ul {
@@ -103,7 +125,12 @@ h3 {
   color: black;
 }
 
-.left-main-section p a {
+.left-main-section span {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.left-main-section span a {
   color: blue;
 }
 
@@ -125,8 +152,16 @@ h3 {
   padding-left: 10px;
 }
 
+.right-main-section div p:first-child::first-letter {
+  color: red;
+}
+
 .right-main-section ul {
   list-style: disc;
+}
+
+footer span {
+  display: block;
 }
 
 /* Class Selector */
@@ -160,7 +195,7 @@ h3 {
 }
 
 .left-main-section {
-  margin-left: 35%;
+  margin-left: 280px;
   text-align: center;
 }
 
@@ -176,5 +211,5 @@ h3 {
 }
 
 .right-main-section {
-  margin-right: 18%;
+  margin-right: 300px;
 }
