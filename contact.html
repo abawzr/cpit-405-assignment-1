@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    />
     <title>Abdullah Bawazeer - Contact</title>
   </head>
   <body>
@@ -28,7 +32,7 @@
       <section class="left-main-section">
         <img
           class="personal-image"
-          src="./Images/pexels-olly-927022.jpg"
+          src="./Images/personal_img.JPG"
           alt="Personal Photo"
         />
         <h1>Abdullah Bawazeer</h1>
@@ -36,19 +40,21 @@
         <h2>Contact</h2>
         <span>
           Email:
-          <a href="mailto:ajnaidbawazeer@stu.kau.edu.sa"
+          <a class="links" href="mailto:ajnaidbawazeer@stu.kau.edu.sa"
             >ajnaidbawazeer@stu.kau.edu.sa</a
           >
         </span>
         <span>
           Phone:
-          <a href="tel:+966123456789">+966 12 345 6789</a>
+          <a class="links" href="tel:+966123456789">+966 12 345 6789</a>
         </span>
         <div>
-          <a target="_blank" href="https://x.com"
+          <a target="_blank" href="https://x.com/Shiinobbii"
             ><img class="social-media-icon" src="./Images/x_icon.png" alt="X"
           /></a>
-          <a target="_blank" href="https://linkedin.com"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/abdullah-bawazeer-3735a2214/"
             ><img
               class="social-media-icon"
               src="./Images/linkedin_icon.png"
@@ -57,7 +63,62 @@
         </div>
       </section>
       <section class="right-main-section">
-        <h2 id="contact">Contact</h2>
+        <h2>Contact</h2>
+        <div class="form">
+          <form
+            action="https://webhook.site/d5d8a768-f125-4636-b157-b1cd8f1cd992"
+            method="post"
+          >
+            <div class="form-div">
+              <label for="name">Name:</label>
+              <input
+                class="form-field"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-div">
+              <label for="email">Email:</label>
+              <input class="form-field" type="email" id="email" name="email" />
+            </div>
+            <div class="form-div">
+              <label for="message">Message:</label>
+              <textarea
+                class="form-field"
+                rows="10"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-div">
+              <label for="message_type">Message Type:</label>
+              <input
+                type="radio"
+                name="message_type"
+                id="complaint"
+                value="complaint"
+                required
+              />
+              <label class="message-type-label" for="complaint"
+                >Complaint</label
+              >
+              <input
+                type="radio"
+                name="message_type"
+                id="inquiry"
+                value="inquiry"
+                required
+              />
+              <label class="message-type-label" for="inquiry">Inquiry</label>
+            </div>
+            <div class="form-div">
+              <input class="form-submit" type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
